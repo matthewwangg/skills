@@ -12,22 +12,12 @@ tools/           repo scripts
 
 ## Skills
 
-| Skill | Trigger |
-|-------|---------|
-| _none yet_ | |
+| Skill | Description |
+|-------|-------------|
+| `local-codecontext` | Read-only orientation on a codebase — a repo, directory, or set of files. Locates the target under `~/Documents/GitHub` or an explicit path, reads the README, manifest, and git history, and reports a synthesis. Reads files whole. Built-in tools only, no edits. |
 
 ## Scripts
 
-| Script | Purpose |
-|--------|---------|
-| `tools/install.sh` | Symlinks every skill in `skills/` into `~/.claude/skills/` |
-
-### `tools/install.sh`
-
-```bash
-./tools/install.sh
-```
-
-Links each `skills/<name>` directory into `~/.claude/skills/<name>`, replacing
-any existing entry. Directories without a `SKILL.md` are ignored. Because the
-entries are symlinks, edits in this repo take effect without reinstalling.
+| Script | Description |
+|--------|-------------|
+| `tools/install.sh` | Symlinks each `skills/<name>` directory into `~/.claude/skills/<name>`, replacing any existing entry. Directories without a `SKILL.md` are ignored. Run with `./tools/install.sh`. |
